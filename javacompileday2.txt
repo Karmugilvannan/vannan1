@@ -1,0 +1,28 @@
+Using CMD to compile the java programm
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ pwd                                                 (present working directory)                
+/c/Users/KARMUGILVANNAN S
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ cd /f                                                (changing the directory c to f using cd command)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ set path=C:\Program Files\Java\jdk-18.0.1\bin        (To set the jdk file path)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ cd java                                               (Again change the directory f to java folder)
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}                                              
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f/java
+$ javac Helloworld.java                                ( Mention  the file name and using javac to compile the programm
+                                                         if there are any error mentioned here)
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f/java
+$ java Helloworld                                      (Enter the file name we get output )
+ Hellow, world!

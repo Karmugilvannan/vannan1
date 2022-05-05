@@ -1,0 +1,48 @@
+Copyfiles
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~/Desktop/car
+$ touch abc.txt def.txt                                      (TO create new empty file using "touch")
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~/Desktop/car
+$ ls
+abc.txt  def.txt                                              (ls command list out the current directory files)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~/Desktop/car
+$ nano a.sh                                                   (using nano command to writte the coding)
+
+for files in *.txt                                            
+do
+        folderName=`echo $files | awk -F. '{print $1}'`;
+
+        if [ -d $folderName ]
+        then
+                rm -r $folderName;
+        fi
+        mkdir $folderName;
+        cp $files $folderName/$files;
+done
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~/Desktop/car
+$ bash -x a.sh
++ for files in *.txt
+++ echo abc.txt
+++ awk -F. '{print $1}'
++ folderName=abc
++ '[' -d abc ']'
++ mkdir abc
++ cp abc.txt abc/abc.txt
++ for files in *.txt
+++ echo def.txt
+++ awk -F. '{print $1}'
++ folderName=def
++ '[' -d def ']'
++ mkdir def
++ cp def.txt def/def.txt
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~/Desktop/car
+$ ls
+a.sh  abc/  abc.txt  def/  def.txt                            (list out the copy files)
+
+
+
+

@@ -1,0 +1,137 @@
+TERMINAL COMMANDS
+
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ pwd                                                                                              (current working directory)
+/c/Users/KARMUGILVANNAN S
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ cd /f                                                                                             (Changing the directory c to f)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ ls                                                                                                (list out the current directory files)
+'$RECYCLE.BIN'/
+'Java Full Course in Tamil  Basics _ OOP _ Mini Project  _ Logic First Tamil(720P_HD).mp4'
+'System Volume Information'/
+ python/
+'python programms'/
+ st1review/
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ ls -l                                                                                             (It shows the long formate of the directory)
+total 1336056
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 Feb 22 15:48 '$RECYCLE.BIN'/
+-rw-r--r-- 1 KARMUGILVANNAN S 197121 1368114073 Apr 29 10:35 'Java Full Course in Tamil  Basics _ OOP _ Mini Project  _ Logic First Tamil(720P_HD).mp4'
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 Feb 22 15:47 'System Volume Information'/
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 May  2 22:14  python/
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 Apr 30 23:17 'python programms'/
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 May  5 11:03  st1review/
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ ls -a                                                                                              (It shows the hidden files of the directory)
+'$RECYCLE.BIN'/
+ ./
+ ../
+'Java Full Course in Tamil  Basics _ OOP _ Mini Project  _ Logic First Tamil(720P_HD).mp4'
+'System Volume Information'/
+ python/
+'python programms'/
+ st1review/
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ ls -al                                                                                             (It shows the all files and all hidden files)
+total 1336064
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 Feb 22 15:48 '$RECYCLE.BIN'/
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 May  5 10:57  ./
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 Apr 27 08:24  ../
+-rw-r--r-- 1 KARMUGILVANNAN S 197121 1368114073 Apr 29 10:35 'Java Full Course in Tamil  Basics _ OOP _ Mini Project  _ Logic First Tamil(720P_HD).mp4'
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 Feb 22 15:47 'System Volume Information'/
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 May  2 22:14  python/
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 Apr 30 23:17 'python programms'/
+drwxr-xr-x 1 KARMUGILVANNAN S 197121          0 May  5 11:03  st1review/
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ ls ~                                                                                              (List out the home directory files)
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IBA_IOAPDATA/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ mugil.py
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ python.py
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ cd ~                                                                                                (Go to the home directory)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ pwd
+/c/Users/KARMUGILVANNAN S
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ cd -                                                                                                (Come back to the old directory) 
+/f
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 /f
+$ ls ..                                                                                               (List out parent directory files)
+LICENSE.txt        cmd/  git-bash.exe*  proc/         unins000.exe*
+ReleaseNotes.html  dev/  git-cmd.exe*   tmp/          unins000.msg
+bin/               etc/  mingw64/       unins000.dat  usr/
+
+
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ pwd
+/c/Users/KARMUGILVANNAN S
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ mkdir temp                                                                                          (create a temp directory)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ rm -r temp                                                                                           (To remove the temp directory)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ mkdir -p temp/temp                                                                                  (To create the another temp directory inside the temp Or To create the nested temp directory)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ rm -r temp/                                                                                         (To remove the nested temp directory)
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ touch a.txt b.txt                                                                                   (To create  two empty folders) 
+
+KARMUGILVANNAN S@DESKTOP-46J1L3L MINGW64 ~
+$ find . -size +5M                                                                                     (It shows only greater than 5M files)
+./AppData/Local/Comms/UnistoreDB/store.vol
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/data_1
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/data_2
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/data_3
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/f_0001aa
+./AppData/Local/Google/Chrome/User Data/Default/Cache/Cache_Data/f_0005e
